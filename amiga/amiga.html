@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Annie</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+
+<body id="chair" style="margin: 0px;">
+
+	<img src="imagenes/line.png" style="width: 309%">
+	<img src="imagenes/titulo.png" style=" position: fixed; right: 16%; bottom: 70%;">
+	<img src="imagenes/cohete.png" style=" position: fixed; left: 11%; bottom: 28%; width: 150px; ">
+
+	<!-- //TERMINA TITULO Y COMIENZA IMAGENES CON LINKS// -->
+
+		<img id="uno" onmouseover="uno()" onmouseout="dos()" src="imagenes/escuela.png" style="width: 335px; position: absolute; bottom: 14%; left: 70px" onclick="Aparecer()">
+
+	<!-- //AQUI TERMINA PRIMERA IMAGEN (HERE 1ST IMAGE ENDS) -->
+
+		<img onmouseover="tres()" onmouseout="cuatro()"  id="pajaro" src="imagenes/luna.gif" style="width: 450px; position: absolute; left: 1200px; bottom: 4.5%" >
+
+	
+	<!-- //AQUI TERMINA SEGUNDA IMAGEN (HERE ENDS 2ND PIC) -->
+	
+		<img id="articulo" onmouseover="cinco()" onmouseout="seis()" onclick="Videito()" src="imagenes/nasa.png" style="width: 400px; position: absolute; left: 2000px ; bottom: 16%">
+
+	<!-- //AQUI TERMINA TERCERA IMAGEN (HERE ENDS 3RD PIC) -->
+
+		<img onclick="Final()" src="imagenes/frase.gif" style="width: 450px; position: absolute; left: 3100px; bottom: 8%">
+
+	<!-- //AQUI TERMINA TERCERA IMAGEN (HERE ENDS 3RD PIC) -->
+
+	<!-- 	COSAS QUE APARECERAN (THING THAT WILL APPEAR) -->
+
+		<img id="hola" src="imagenes/line.png" style="width: 650px; position: absolute; left: 450px; bottom: 45%" >
+		<img id="holam" src="imagenes/line.png" style="width: 650px; position: absolute; left:450px; bottom: 4.5%" >
+		<video id="kaka" src="imagenes/video.mp4" style="width: 500px; position: absolute;left: 2400px; bottom:145px; border-style: solid;border-color: transparent;" onclick="holas()"  ondblclick="holar()"></video>
+		<img id="pepe" src="imagenes/line.png" style="width: 600px; position: absolute; left: 3150px; bottom: 25%">
+
+		<img id="cocacolaaa" src="imagenes/line.png" style="width: 400px; position: absolute; left: 3250px; bottom: 50%">
+		<!-- <img id="luna" src="imagenes/alabama.png" style="width: 450px; position: absolute; left:1450px; bottom: 4.5%" > -->
+
+	<!-- checar que es esto jejee -->
+
+
+
+	
+
+	<!-- <img id="coca" src="imagenes/playy.png" style="width: 400px; position: absolute; left: 2450px; bottom: 10%" >
+
+
+	<img onclick="Stripes()" id="compu" onmouseover="siete()" onmouseout="ocho()" src="imagenes/compu.png" style="width: 550px; position: absolute; left: 3000px; bottom: 0%">
+	<img onclick="Stripes()" id="maquina" onmouseover="nueve()" onmouseout="diez()" src="imagenes/machine.png" style="width: 400px; position: absolute; left: 3400px; bottom: 0%">
+
+	<div style="position: absolute; left: 3850px; bottom: 6%" ><video autoplay id="kaka"  style="width: 500px" src="imagenes/vide.mp4"> YOUR BROWSER DOESNT SUPPORT OUR VIDEO</video></div>
+
+	
+	
+
+ -->
+
+
+<script type="text/javascript">
+
+
+
+//APPEAR STUFF WE NEED 
+	
+	function Aparecer() { 
+		document.getElementById('hola').src = 'imagenes/adios2.png';
+		document.getElementById('holam').src = 'imagenes/holis2.png';
+						
+	 }
+
+
+//CAMBIAR COLOR DE FOTOS (CHANGHING IMAGES COLOR)
+
+	function uno() { document.getElementById('uno').src = 'imagenes/escuela2.png'; }
+	function dos() { document.getElementById('uno').src = 'imagenes/escuela.png'; }
+
+	function tres() { document.getElementById('pajaro').src = 'imagenes/alabama.png'; }
+	function cuatro() { document.getElementById('pajaro').src = 'imagenes/luna.gif';}
+
+	// function cinco() { document.getElementById('articulo').src = 'imagenes/nasa2.png' }
+	// function seis() { document.getElementById('articulo').src = 'imagenes/nasa.png'}
+
+// 	function siete()  { document.getElementById('compu').src = 'imagenes/compu2.png' }
+// 	function ocho()  { document.getElementById('compu').src = 'imagenes/compu.png' }
+// 	function nueve()  { document.getElementById('maquina').src = 'imagenes/machine2.png' }
+// 	function diez()  { document.getElementById('maquina').src = 'imagenes/machine.png' }
+
+function Final() {
+document.getElementById('pepe').src = 'imagenes/burbuja.gif';
+document.getElementById('cocacolaaa').src = 'imagenes/mundo.png';
+}
+
+// function finals {
+
+// 	document.getElementById('cocacolaaa').src = 'imagenes/mundo.png';
+
+// }
+
+
+
+
+
+
+// // APPEAR VIDEO
+
+function Videito() { 
+	document.getElementById('kaka').src = 'imagenes/video.mp4';
+	document.getElementById('kaka').play();
+	document.getElementById('kaka').style.borderColor = 'red'; 
+}
+
+function holas() {
+	 document.getElementById('kaka').pause();
+	}
+	// function holar() { document.getElementById('kaka').play()
+	
+
+</script>
+</body>
+</html>
