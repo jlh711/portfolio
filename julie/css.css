@@ -1,0 +1,13 @@
+#julie {
+	background-image: url("imagenes/fondo.jpg");
+	height:100%;
+ 	/*background-position: center;*/
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.cubo {	   
+width: 100px;
+height: 100px;
+background-color: red;             
+}
