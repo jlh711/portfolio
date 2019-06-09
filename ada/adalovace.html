@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ada Lovace</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body id="chair" style="margin: 0px;">
+
+	<img src="imagenes/line.png" style="width: 309%">
+	<img src="imagenes/titulo.png" style=" position: fixed; right: 13%; bottom: 60%;">
+
+<!-- //TERMINA TITULO Y COMIENZA IMAGENES CON LINKS// -->
+
+	<img id="uno" onmouseover="uno()" onmouseout="dos()" src="imagenes/ben.png" style="width: 335px; position: absolute; bottom: 0%" onclick="Aparecer()">
+
+	<img onclick="Yolo()" ondblclick="Yoloo()" id="playyy" src="imagenes/playy.png" style="width: 1px; position: absolute; left: 500px; bottom: 20%" >
+
+	<audio id="bluetea"> <source src="imagenes/redtea.mp3" type="audio/mpeg"> YOUR BROWSER DOESNT SUPPORT OUR AUDIO </audio>
+
+	<!-- //AQUI TERMINA PRIMERA IMAGEN (HERE 1ST IMAGE ENDS) -->
+	
+	<img onclick="Caja()" id="pajaro" onmouseover="tres()" onmouseout="cuatro()"  src="imagenes/bird.png" style="width: 560px; position: absolute; right: 5%; bottom: 0%">
+
+	<img id="te" src="imagenes/playy.png" style="width: 350px; position: absolute; left: 1270px; bottom: 58%" >
+
+	<!-- //AQUI TERMINA SEGUNDA IMAGEN (HERE ENDS 2ND PIC) -->
+
+	<img onclick="Translate()" id="articulo" onmouseover="cinco()" onmouseout="seis()" src="imagenes/articulo.png" style="width: 500px; position: absolute; left: 1900px; bottom: 0%">
+
+	<img id="coca" src="imagenes/playy.png" style="width: 400px; position: absolute; left: 2450px; bottom: 10%" >
+
+	<!-- //AQUI TERMINA TERCERA IMAGEN (HERE ENDS 3RD PIC) -->
+
+	<img onclick="Stripes()" id="compu" onmouseover="siete()" onmouseout="ocho()" src="imagenes/compu.png" style="width: 550px; position: absolute; left: 3000px; bottom: 0%">
+	<img onclick="Stripes()" id="maquina" onmouseover="nueve()" onmouseout="diez()" src="imagenes/machine.png" style="width: 400px; position: absolute; left: 3400px; bottom: 0%">
+
+	<div style="position: absolute; left: 3850px; bottom: 6%" ><video autoplay id="kaka"  style="width: 500px" src="imagenes/video.mp4"> YOUR BROWSER DOESNT SUPPORT OUR VIDEO</video></div>
+
+	<!-- //AQUI TERMINA CUARTA IMAGEN (HERE ENDS 4TH PIC) -->
+	
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+	var a = document.getElementById('bluetea')
+
+//APPEAR STUFF WE NEED 
+	
+	function Aparecer() { document.getElementById('playyy').src = 'imagenes/play.png';
+						document.getElementById('playyy').style.width = '150px';
+	 }
+
+
+//CAMBIAR COLOR DE FOTOS (CHANGHING IMAGES COLOR)
+
+	function uno() { document.getElementById('uno').src = 'imagenes/ben2.png'; }
+	function dos() { document.getElementById('uno').src = 'imagenes/ben.png' ;}
+
+	function tres() { document.getElementById('pajaro').src = 'imagenes/bird2.png' ;}
+	function cuatro() { document.getElementById('pajaro').src = 'imagenes/bird.png';}
+
+	function cinco() { document.getElementById('articulo').src = 'imagenes/articulo2.png' ;}
+	function seis() { document.getElementById('articulo').src = 'imagenes/articulo.png';}
+
+	function siete()  { document.getElementById('compu').src = 'imagenes/compu2.png'; }
+	function ocho()  { document.getElementById('compu').src = 'imagenes/compu.png'; }
+	function nueve()  { document.getElementById('maquina').src = 'imagenes/machine2.png' ;}
+	function diez()  { document.getElementById('maquina').src = 'imagenes/machine.png'; }
+
+
+// SOUND 1ST!!
+
+	function Yolo() { a.pause(); }
+
+	function Yoloo() { a.play();}
+
+// PAJARO CAJA (BOX BIRD)
+
+	function Caja() { document.getElementById('te').src = 'imagenes/box.png' ;}
+
+// ADA TEXT 
+
+	function Translate() { document.getElementById('coca').src = 'imagenes/cocacola.png'; }
+
+// APPEAR VIDEO
+
+	function Stripes() { document.getElementById('kaka').src = 'imagenes/video.mp4' ;}
+	
+
+</script>
+</body>
+</html>
