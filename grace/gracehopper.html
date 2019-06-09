@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grace Hopper</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body id="background" style="margin: 0px;">
+
+	<audio  src="imagenes/navysong.wav" autoplay> YOUR BROWSER DOESNT SUPPORT OUR AUDIO </audio> 
+
+	<img src="imagenes/line.png" style="width: 309%">
+	<img src="imagenes/titlee.png" style=" position: fixed; right: 12%; bottom: 58%;">
+
+
+
+	<img id="uno" onmouseover="uno()" onmouseout="dos()" onclick="child()" src="imagenes/esb.png" style="width: 17.5%; position: absolute; bottom: 0%">
+
+	<img id="te" src="imagenes/playy.png" style="width: 350px; position: absolute; left: 350px; bottom:3%" >
+
+	<img id="dos" onmouseover="tres()" onmouseout="cuatro()" onclick="alarm()"" src="imagenes/alarm.png" style="width: 13%; position: absolute; left: 9%; bottom: 0%">
+
+	<audio id="alarmsound"> <source src="imagenes/alarmsound.wav" type="audio/wav"> YOUR BROWSER DOESNT SUPPORT OUR AUDIO </audio>
+
+
+	<img id="yale" onmouseover="cinco()" onmouseout="seis()" onclick="dip()"" src="imagenes/yale.png" style="width: 510px; position: absolute; left: 1100px; bottom: 0%">
+
+	<img id="vassar" onmouseover="siete()" onmouseout="ocho()" onclick="dip()"" src="imagenes/vassar.png" style="width: 500px; position: absolute; right: 5%; bottom: 0%">
+
+	<img id="coca" src="imagenes/playy.png" style="width: 500px; position: absolute; left: 1640px; bottom: 6%" >
+
+
+	<img id="boat" onmouseover="nueve()" onmouseout="diez()" onclick= "smoke()" src="imagenes/boat.png" style="width: 1400px; position: absolute; left: 2050px; bottom: 0%">
+
+	<img id="love" src="imagenes/playy.png" style="width: 550px; position: absolute; left: 3100px; bottom: 13%" >
+
+
+	<img onclick="pow()"" src="imagenes/usnavy.png" style="width: 400px; position: absolute; left: 3700px; bottom: 0%">
+
+
+	<img id="bot" src="imagenes/playy.png" style="width: 500px; position: absolute; left: 4000px; bottom: 25%" >
+
+
+
+<script type="text/javascript">
+
+	var a = document.getElementById('alarmsound')
+
+	function uno() { document.getElementById('uno').src = 'imagenes/esb2.png' }
+	function dos() { document.getElementById('uno').src = 'imagenes/esb.png' }
+	function tres() { document.getElementById('dos').src = 'imagenes/alarm2.png' }
+	function cuatro() { document.getElementById('dos').src = 'imagenes/alarm.png'}
+
+	function cinco() { document.getElementById('yale').src = 'imagenes/yale2.png'}
+	function seis() {document.getElementById('yale').src = 'imagenes/yale.png'}
+
+	function siete() {document.getElementById('vassar').src = 'imagenes/vassar2.png'}
+	function ocho() {document.getElementById('vassar').src = 'imagenes/vassar.png'}
+
+	function nueve() {document.getElementById('boat').src = 'imagenes/boat2.png'}
+	function diez() {document.getElementById('boat').src = 'imagenes/boat.png'}
+
+
+	function child() { document.getElementById('te').src = 'imagenes/drop.png'}
+
+	function dip() {document.getElementById('coca').src = 'imagenes/diploma.png'}
+
+	function smoke() {document.getElementById('love').src = 'imagenes/smoke.png'}
+
+	function pow() {document.getElementById('bot').src = 'imagenes/boom.png'}
+
+
+
+	function alarm() {
+		a.play();
+	}
+
+
+</script>
+
+</body>
+</html>
