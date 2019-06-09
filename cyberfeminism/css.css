@@ -1,0 +1,61 @@
+.principal {
+	width: 250px  ;
+	height: 350px ;
+	border: solid transparent;
+	padding: 7px;
+	border-color: red;
+	border-image-source: url(imagenes/hola.gif);
+	border-image-width: 145px;
+	border-image-repeat: repeat;
+	border-image-slice: 30%;
+	margin-left:10px;
+	margin-right: 10px;
+}
+
+
+.letra {
+	width:100px;
+	
+}
+
+#titulo {
+	width: 500px;
+	padding-left: 0px;
+
+}
+
+.beyo {
+	width: 100px;
+}
+
+.beyod {
+	width: 170px;
+}
+
+.enver{
+
+cursor: help;
+ 
+
+}
+
+#julie {
+	background-image: url("imagenes/fondo.jpg");
+	height:100%;
+ 	/*background-position: center;*/
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+#ivan {
+	background-image: url("imagenes/sprite.gif");
+	height:100%;
+ 	/*background-position: center;*/
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.charger {
+    
+    
+}
